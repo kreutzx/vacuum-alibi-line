@@ -7,6 +7,8 @@ LINE = (
 
 
 def main():
+    # One-line limit for this competition is 200 characters.
+    assert 1 <= len(LINE.strip()) <= 200, len(LINE)
     out_dir = "/output"
     os.makedirs(out_dir, exist_ok=True)
     entry_path = os.path.join(out_dir, "entry.txt")
